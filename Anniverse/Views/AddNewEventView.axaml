@@ -17,7 +17,7 @@
 		</Grid.ColumnDefinitions>
 
 		<Button Grid.Column="0" FontSize="20" Margin="0,100,0,0" Background="#1f1f1f" Width="150" Foreground="AntiqueWhite" Command="{Binding $parent[Window].DataContext.ReturnToPanel}">
-			<Image Source="/Assets/arrow_left.png"/>
+			Go back
 		</Button>
 
 		<TextBlock Grid.Row="0" Grid.Column="1" Foreground="AntiqueWhite" TextAlignment="Center" FontSize="35" VerticalAlignment="Center" Text="Add new event"></TextBlock>
