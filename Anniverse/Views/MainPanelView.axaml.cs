@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Anniverse.Views
 {
-    public partial class MainPanel : UserControl
+    public partial class MainPanelView : UserControl
     {
-        public MainPanel()
+        public MainPanelView()
         {
             InitializeComponent();
         }

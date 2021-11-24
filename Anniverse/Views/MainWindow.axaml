@@ -5,13 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Anniverse.Views.MainWindow"
+		xmlns:views="clr-namespace:Anniverse.Views"
         Icon="/Assets/avalonia-logo.ico"
+		Content="{Binding Content}"
         Title="Anniverse">
-
-    <Design.DataContext>
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
 </Window>
