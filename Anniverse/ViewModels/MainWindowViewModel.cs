@@ -21,6 +21,10 @@ namespace Anniverse.ViewModels
         {
             Content = new AddNewEventViewModel();
         }
+        public void OpenMainPanel()
+        {
+            Content = new MainPanelViewModel();
+        }
     }
     
 }
