@@ -2,36 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
 			 Background="#1f1f1f"
              x:Class="Anniverse.Views.AddNewEventView">
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="20*" />
-			<RowDefinition Height="60*" />
+			<RowDefinition Height="8*"></RowDefinition>
+			<RowDefinition Height="92*"></RowDefinition>
 		</Grid.RowDefinitions>
-
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="20*" />
-			<ColumnDefinition Width="80*" />
-		</Grid.ColumnDefinitions>
-
-		<Button Grid.Column="0" FontSize="20" Margin="0,100,0,0" Background="#1f1f1f" Width="150" Foreground="AntiqueWhite" Command="{Binding $parent[Window].DataContext.OpenMainPanel}">
-			Go back
-		</Button>
-
-		<TextBlock Grid.Row="0" Grid.Column="1" Foreground="AntiqueWhite" TextAlignment="Center" FontSize="35" VerticalAlignment="Center" Text="Add new event"></TextBlock>
-		<TextBox Watermark="Event name" Grid.Row="1" Grid.Column="1" Width="400" Height="35" FontSize="20" Margin="0,0,0,400" Text="{Binding EventName, Mode=TwoWay}" />
-		<ComboBox Grid.Row="1" Width="400" Grid.Column="1" Height="35" FontSize="20" SelectedIndex="{Binding EventTypeIndex, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,250" Name="EventType">
-			<ComboBoxItem>Birthday</ComboBoxItem>
-			<ComboBoxItem>Deadline</ComboBoxItem>
-			<ComboBoxItem>Anniversary</ComboBoxItem>
-			<ComboBoxItem>Monthly</ComboBoxItem>
-			<ComboBoxItem>Other</ComboBoxItem>
-		</ComboBox>
-
-		<DatePicker Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,100" FontSize="20" Name="EventDate" SelectedDate="{Binding EventDate, Mode=TwoWay}" />
-
-		<Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="0,100,0,0" Background="#31752f" Width="150" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
+		
+		<Rectangle Fill="#334854" Grid.Row="0" />
+		<TextBlock Foreground="#EFECEA" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Anniverse - Add New Event</TextBlock>
 	</Grid>
 </UserControl>
