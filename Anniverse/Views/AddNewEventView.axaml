@@ -12,9 +12,24 @@
 		</Grid.RowDefinitions>
 		
 		<Rectangle Fill="#334854" Grid.Row="0" />
-		<Button Background="#334854">
+		<Button Background="#334854" Command="{Binding $parent[Window].DataContext.OpenMainPanel}">
 			<Image Source="/Assets/arrow_left.png" />
 		</Button>
 		<TextBlock Foreground="#EFECEA" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25">Anniverse - Add New Event</TextBlock>
+
+		<StackPanel Grid.Row="1" Spacing="70" VerticalAlignment="Center">
+			<TextBox Watermark="Event name" Width="600" FontSize="30" Foreground="#334854" Text="{Binding EventName, Mode=TwoWay}" Background="#EDEDED" />
+			<ComboBox SelectedIndex="{Binding EventTypeIndex, Mode=TwoWay}" Foreground="#334854" Background="#EDEDED" Width="600" FontSize="30" HorizontalAlignment="Center" Name="EventType">
+				<ComboBoxItem>Birthday</ComboBoxItem>
+				<ComboBoxItem>Deadline</ComboBoxItem>
+				<ComboBoxItem>Anniversary</ComboBoxItem>
+				<ComboBoxItem>Monthly</ComboBoxItem>
+				<ComboBoxItem>Other</ComboBoxItem>
+			</ComboBox>
+
+			<DatePicker Name="EventDate" Foreground="#334854" Background="#EDEDED" Width="600" HorizontalAlignment="Center" FontSize="30" SelectedDate="{Binding EventDate, Mode=TwoWay}" />
+
+			<Button Background="#F9C535" Width="600" Padding="5" CornerRadius="5" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
+		</StackPanel>
 	</Grid>
 </UserControl>
