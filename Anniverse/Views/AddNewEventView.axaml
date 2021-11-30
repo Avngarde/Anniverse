@@ -12,9 +12,9 @@
 		</Grid.RowDefinitions>
 		
 		<Rectangle Fill="#334854" Grid.Row="0" />
-		<Button>
-			<Image Source="/Assets/avalonia-logo.ico" />
+		<Button Background="#334854">
+			<Image Source="/Assets/arrow_left.png" />
 		</Button>
-		<TextBlock Foreground="#EFECEA" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Anniverse - Add New Event</TextBlock>
+		<TextBlock Foreground="#EFECEA" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25">Anniverse - Add New Event</TextBlock>
 	</Grid>
 </UserControl>
