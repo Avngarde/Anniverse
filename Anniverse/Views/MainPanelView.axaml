@@ -26,7 +26,7 @@
 			<DockPanel Grid.Column="0">
 				<Button DockPanel.Dock="Top" FontSize="25" Height="60" Command="{Binding $parent[Window].DataContext.OpenAddNewEventView}" VerticalContentAlignment="Center" CornerRadius="0" Background="#30475E" Foreground="#DDDDDD" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Add new</Button>
 				<Border Background="#F05454" Margin="20" VerticalAlignment="Bottom" CornerRadius="20">
-					<TextBlock FontSize="25" Text="01.01.0000" TextAlignment="Center"></TextBlock>
+					<TextBlock FontSize="25" Text="{Binding CurrentDate}" TextAlignment="Center"></TextBlock>
 				</Border>
 			</DockPanel>
 		</Grid>
