@@ -12,7 +12,7 @@
 		</Grid.RowDefinitions>
 		
 		<Rectangle Fill="#222831" Grid.Row="0" />
-		<Button Background="#334854" Command="{Binding $parent[Window].DataContext.OpenMainPanel}">
+		<Button Background="#222831" Command="{Binding $parent[Window].DataContext.OpenMainPanel}">
 			<Image Source="/Assets/arrow_left.png" />
 		</Button>
 		<TextBlock Foreground="#EFECEA" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25">Anniverse - Add New Event</TextBlock>
