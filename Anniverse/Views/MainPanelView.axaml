@@ -12,7 +12,7 @@
 			<RowDefinition Height="92*"></RowDefinition>
 		</Grid.RowDefinitions>
 		
-		<Rectangle Fill="#334854" Grid.Row="0" />
+		<Rectangle Fill="#222831" Grid.Row="0" />
 		<TextBlock Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#EFECEA">Anniverse</TextBlock>
 
 		<Grid Grid.Row="1">
@@ -20,7 +20,6 @@
 				<ColumnDefinition Width="20*"/>
 				<ColumnDefinition Width="80*"/>
 			</Grid.ColumnDefinitions>
-		
 		</Grid>
 
 	</Grid>

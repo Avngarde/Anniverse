@@ -11,7 +11,7 @@
 			<RowDefinition Height="92*"></RowDefinition>
 		</Grid.RowDefinitions>
 		
-		<Rectangle Fill="#334854" Grid.Row="0" />
+		<Rectangle Fill="#222831" Grid.Row="0" />
 		<Button Background="#334854" Command="{Binding $parent[Window].DataContext.OpenMainPanel}">
 			<Image Source="/Assets/arrow_left.png" />
 		</Button>
@@ -29,7 +29,7 @@
 
 			<DatePicker Name="EventDate" Foreground="#334854" Background="#EDEDED" Width="600" HorizontalAlignment="Center" FontSize="30" SelectedDate="{Binding EventDate, Mode=TwoWay}" />
 
-			<Button Background="#F9C535" Width="600" Padding="5" CornerRadius="5" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
+			<Button Background="#F05454" Width="600" Padding="5" CornerRadius="5" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
 		</StackPanel>
 	</Grid>
 </UserControl>
