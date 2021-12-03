@@ -29,6 +29,39 @@
 					<TextBlock FontSize="25" Foreground="#EEEEEE" Text="{Binding CurrentDate}" TextAlignment="Center"></TextBlock>
 				</Border>
 			</DockPanel>
+
+			<ScrollViewer VerticalScrollBarVisibility="Visible" VerticalAlignment="Top" Grid.Column="1">
+				<StackPanel VerticalAlignment="Stretch">
+					<StackPanel HorizontalAlignment="Stretch" Margin="20,30,20,20">
+						<ItemsRepeater Items="{Binding Events}">
+							<ItemsRepeater.ItemTemplate>
+								<DataTemplate>
+									<DockPanel Margin="30,0,30,50">
+										<StackPanel>
+											<TextBlock Background="#2f2f2f" FontSize="25" Foreground="AntiqueWhite" TextAlignment="Center" Padding="0,8,0,8" Text="{Binding Name}"></TextBlock>
+											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding Date}"></TextBlock>
+											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,2,0,0" Text="{Binding EventType}"></TextBlock>
+											<Grid>
+												<Grid.ColumnDefinitions>
+													<ColumnDefinition Width="50*" />
+													<ColumnDefinition Width="50*" />
+												</Grid.ColumnDefinitions>
+
+												<Button Grid.Column="0" HorizontalAlignment="Stretch" Foreground="#6264a7" HorizontalContentAlignment="Center" CornerRadius="0" Background="#2f2f2f" FontSize="20">Details</Button>
+												<Button Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="#a4373a" CornerRadius="0" Background="#2f2f2f" FontSize="20">Delete</Button>
+
+											</Grid>
+
+											<ProgressBar Height="10" CornerRadius="0" Value="10" Foreground="{Binding ProgressBarColour}" />
+										</StackPanel>
+									</DockPanel>
+								</DataTemplate>
+							</ItemsRepeater.ItemTemplate>
+						</ItemsRepeater>
+					</StackPanel>
+				</StackPanel>
+			</ScrollViewer>
+			
 		</Grid>
 
 	</Grid>
