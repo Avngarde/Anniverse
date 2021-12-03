@@ -8,5 +8,7 @@
 		xmlns:views="clr-namespace:Anniverse.Views"
         Icon="/Assets/avalonia-logo.ico"
 		Content="{Binding Content}"
+		MinWidth="1000"
+		MinHeight="600"
         Title="Anniverse">
 </Window>

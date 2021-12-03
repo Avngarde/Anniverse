@@ -10,7 +10,7 @@ namespace Anniverse.ViewModels
 {
     class MainPanelViewModel : ViewModelBase
     {
-        public string CurrentDate => "Current Date: " + DateTime.Today.ToString("dd/MM/yyyy");
+        public string CurrentDate => DateTime.Today.ToString("dd/MM/yyyy");
 
         public ObservableCollection<Event> Events => new Connector().GetEvents();
     }
