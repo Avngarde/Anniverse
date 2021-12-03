@@ -21,12 +21,12 @@
 				<ColumnDefinition Width="80*"/>
 			</Grid.ColumnDefinitions>
 			
-			<Rectangle Grid.Column="0" Fill="#30475E" />
+			<Rectangle Grid.Column="0" Fill="#393E46" />
 
 			<DockPanel Grid.Column="0">
-				<Button DockPanel.Dock="Top" FontSize="25" Height="60" Command="{Binding $parent[Window].DataContext.OpenAddNewEventView}" VerticalContentAlignment="Center" CornerRadius="0" Background="#30475E" Foreground="#DDDDDD" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Add new</Button>
-				<Border Background="#F05454" Margin="20" VerticalAlignment="Bottom" CornerRadius="20">
-					<TextBlock FontSize="25" Text="{Binding CurrentDate}" TextAlignment="Center"></TextBlock>
+				<Button DockPanel.Dock="Top" FontSize="25" Height="60" Command="{Binding $parent[Window].DataContext.OpenAddNewEventView}" VerticalContentAlignment="Center" CornerRadius="0" Background="#393E46" Foreground="#DDDDDD" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Add new</Button>
+				<Border Background="#FF5722" Margin="20" VerticalAlignment="Bottom" CornerRadius="20">
+					<TextBlock FontSize="25" Foreground="#EEEEEE" Text="{Binding CurrentDate}" TextAlignment="Center"></TextBlock>
 				</Border>
 			</DockPanel>
 		</Grid>

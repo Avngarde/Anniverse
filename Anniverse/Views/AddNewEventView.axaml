@@ -29,7 +29,7 @@
 
 			<DatePicker Name="EventDate" Foreground="#334854" Background="#EDEDED" Width="600" HorizontalAlignment="Center" FontSize="30" SelectedDate="{Binding EventDate, Mode=TwoWay}" />
 
-			<Button Background="#F05454" Width="600" Padding="5" CornerRadius="5" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
+			<Button Background="#FF5722" Width="600" Padding="5" CornerRadius="5" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="AntiqueWhite" Command="{Binding AddNewEvent}">Add!</Button>
 		</StackPanel>
 	</Grid>
 </UserControl>
