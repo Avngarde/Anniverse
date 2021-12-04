@@ -37,6 +37,10 @@ namespace Anniverse.Models
         {
             string jsonString = File.ReadAllText(@"./events/events.json");
             this.events = JsonSerializer.Deserialize<ObservableCollection<Event>>(jsonString);
+            foreach(Event e in this.events)
+            {
+                e.TimeLeft = (int)(e.Date - DateTime.Today).TotalDays;
+            }
         }
 
         public ObservableCollection<Event> GetEvents()
