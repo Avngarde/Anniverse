@@ -52,7 +52,7 @@
 
 											</Grid>
 
-											<ProgressBar Height="10" CornerRadius="0" Value="10" Foreground="{Binding ProgressBarColour}" />
+											<ProgressBar Height="10" CornerRadius="0" Value="{Binding TimeLeft}" Minimum="0" Maximum="{Binding DifferenceBetweenDates}" Foreground="{Binding ProgressBarColour}" />
 										</StackPanel>
 									</DockPanel>
 								</DataTemplate>
