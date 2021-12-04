@@ -64,6 +64,7 @@ namespace Anniverse.ViewModels
             e.EventType = (Event.Type)Enum.Parse(typeof(Event.Type), types[_EventTypeIndex]);
             e.Date = _EventDate;
             e.ProgressBarColour = progressBarColours[e.EventType];
+            e.DateWhenAdded = DateTime.Today;
             connector.AddNewEvent(e);
             connector.WriteToFile();
         }
