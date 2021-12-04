@@ -25,5 +25,7 @@ namespace Anniverse.Models
         public String? Name { get; set; }
         public DateTime Date { get; set; }
         public DateTime DateWhenAdded { get; set; }
+        public int TimeLeft { get; set; }
+        public int DifferenceBetweenDates { get; set; }
     }
 }
