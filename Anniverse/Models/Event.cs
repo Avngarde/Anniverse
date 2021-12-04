@@ -24,5 +24,6 @@ namespace Anniverse.Models
         public Type EventType { get; set; }
         public String? Name { get; set; }
         public DateTime Date { get; set; }
+        public DateTime DateWhenAdded { get; set; }
     }
 }
