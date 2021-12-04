@@ -65,6 +65,7 @@ namespace Anniverse.ViewModels
             e.Date = _EventDate;
             e.ProgressBarColour = progressBarColours[e.EventType];
             e.DateWhenAdded = DateTime.Today;
+            e.DifferenceBetweenDates = (int)(e.Date - e.DateWhenAdded).TotalDays;
             connector.AddNewEvent(e);
             connector.WriteToFile();
         }
