@@ -17,7 +17,7 @@ namespace Anniverse.ViewModels
 
         public ObservableCollection<Event> Events => connector.GetEvents();
 
-        public void OnClickCommand(int id)
+        public void DeleteEvent(int id)
         {
             connector.DeleteEvent(id);
         }
