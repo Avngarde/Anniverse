@@ -59,5 +59,18 @@ namespace Anniverse.Models
             string serializedEvents = JsonSerializer.Serialize(this.events);
             File.WriteAllText(@"./events/events.json", serializedEvents);
         }
+
+        public void DeleteEvent(int id)
+        {
+            foreach(Event e in this.events)
+            {
+                if (e.Id == id)
+                {
+                    this.events.Remove(e);
+                    WriteToFile();
+                    return;
+                }
+            }
+        }
     }
 }
