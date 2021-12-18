@@ -40,6 +40,7 @@ namespace Anniverse.Models
             foreach(Event e in this.events)
             {
                 e.TimeLeft = (int)(e.Date - DateTime.Today).TotalDays;
+                e.DifferenceBetweenDates = (int)(e.Date - e.DateWhenAdded).TotalDays;
             }
         }
 
