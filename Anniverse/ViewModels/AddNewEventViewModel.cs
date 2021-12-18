@@ -19,9 +19,9 @@ namespace Anniverse.ViewModels
             { Event.Type.Birthday, "#FFB900" },
             { Event.Type.Deadline, "#847545" },
             { Event.Type.Anniversary, "#107C10" },
-            { Event.Type.Monthly, "8764B8" },
-            { Event.Type.Meeting, "E81123" },
-            { Event.Type.Other, "0099BC" }
+            { Event.Type.Monthly, "#8764B8" },
+            { Event.Type.Meeting, "#E81123" },
+            { Event.Type.Other, "#0099BC" }
         };
 
         private string _EventName;

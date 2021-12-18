@@ -60,6 +60,17 @@ namespace Anniverse.Models
             File.WriteAllText(@"./events/events.json", serializedEvents);
         }
 
+        private void UpdateId()
+        {
+            int length = this.events.Count;
+            for (int idx = 0; idx < length; idx++)
+            {
+                this.events[idx].Id = (byte)idx;
+            }
+
+            WriteToFile();
+        }
+
         public void DeleteEvent(int id)
         {
             foreach(Event e in this.events)
@@ -67,7 +78,7 @@ namespace Anniverse.Models
                 if (e.Id == id)
                 {
                     this.events.Remove(e);
-                    WriteToFile();
+                    UpdateId();
                     return;
                 }
             }
