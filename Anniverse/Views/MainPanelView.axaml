@@ -41,16 +41,15 @@
 											<TextBlock Background="#2f2f2f" FontSize="25" Foreground="AntiqueWhite" TextAlignment="Center" Padding="0,8,0,8" Text="{Binding Name}"></TextBlock>
 											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding Date}"></TextBlock>
 											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,2,0,0" Text="{Binding EventType}"></TextBlock>
+
 											<Grid>
 												<Grid.ColumnDefinitions>
-													<ColumnDefinition Width="50*" />
-													<ColumnDefinition Width="50*" />
+													<ColumnDefinition Width="100*" />
 												</Grid.ColumnDefinitions>
 
-												<Button Grid.Column="0" HorizontalAlignment="Stretch" Foreground="#6264a7" HorizontalContentAlignment="Center" CornerRadius="0" Background="#2f2f2f" FontSize="20">Details</Button>
-												<Button Command="{Binding $parent[ItemsRepeater].DataContext.DeleteEvent}" CommandParameter="{Binding Id}" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="#a4373a" CornerRadius="0" Background="#2f2f2f" FontSize="20">Delete</Button>
+												<Button Command="{Binding $parent[ItemsRepeater].DataContext.DeleteEvent}" CommandParameter="{Binding Id}" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="#a4373a" CornerRadius="0" Background="#2f2f2f" FontSize="20">Delete</Button>
 											</Grid>
-
+											
 											<Border Background="{Binding ProgressBarColour}" Padding="0,1.5,0,1.5">
 												<TextBlock TextAlignment="Center" FontSize="18" Text="{Binding DaysLeftText}"></TextBlock>
 											</Border>
