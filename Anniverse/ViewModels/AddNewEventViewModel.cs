@@ -16,12 +16,12 @@ namespace Anniverse.ViewModels
 
         public Dictionary<Event.Type, string> progressBarColours = new()
         {
-            { Event.Type.Birthday, "#FFB900" },
-            { Event.Type.Deadline, "#847545" },
-            { Event.Type.Anniversary, "#107C10" },
-            { Event.Type.Monthly, "#8764B8" },
-            { Event.Type.Meeting, "#E81123" },
-            { Event.Type.Other, "#0099BC" }
+            { Event.Type.Birthday, "#B388FF" },
+            { Event.Type.Deadline, "#FF1744" },
+            { Event.Type.Anniversary, "#2979FF" },
+            { Event.Type.Monthly, "#00E676" },
+            { Event.Type.Meeting, "#76FF03" },
+            { Event.Type.Other, "#FF6D00" }
         };
 
         private string _EventName;
