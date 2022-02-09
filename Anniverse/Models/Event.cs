@@ -18,8 +18,8 @@ namespace Anniverse.Models
             Other
         }
 
-        public String ProgressBarColour { get; set; }
-
+        public string? ProgressBarColour { get; set; }
+        public string? DaysLeftText { get; set; }
         public byte Id { get; set; }
         public Type EventType { get; set; }
         public String? Name { get; set; }
