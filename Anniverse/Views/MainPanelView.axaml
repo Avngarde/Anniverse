@@ -8,14 +8,10 @@
 
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="8*"></RowDefinition>
-			<RowDefinition Height="92*"></RowDefinition>
+			<RowDefinition Height="100*"></RowDefinition>
 		</Grid.RowDefinitions>
 		
-		<Rectangle Fill="#222831" Grid.Row="0" />
-		<TextBlock Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#EFECEA">Anniverse</TextBlock>
-
-		<Grid Grid.Row="1">
+		<Grid Grid.Row="0">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="20*"/>
 				<ColumnDefinition Width="80*"/>
