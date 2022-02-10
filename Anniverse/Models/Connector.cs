@@ -42,6 +42,7 @@ namespace Anniverse.Models
                 e.TimeLeft = (int)(e.Date - DateTime.Today).TotalDays;
                 e.DifferenceBetweenDates = (int)(e.Date - e.DateWhenAdded).TotalDays;
                 e.DaysLeftText = String.Format("{0} days left", e.TimeLeft);
+                e.DateText = String.Format("{0}.{1}.{2}", e.Date.Day, e.Date.Month, e.Date.Year);
             }
         }
 

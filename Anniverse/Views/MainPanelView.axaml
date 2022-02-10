@@ -39,7 +39,7 @@
 									<DockPanel Margin="30,0,30,50">
 										<StackPanel>
 											<TextBlock Background="#2f2f2f" FontSize="25" Foreground="AntiqueWhite" TextAlignment="Center" Padding="0,8,0,8" Text="{Binding Name}"></TextBlock>
-											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding Date}"></TextBlock>
+											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding DateText}"></TextBlock>
 											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,2,0,0" Text="{Binding EventType}"></TextBlock>
 
 											<Grid>
