@@ -3,7 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
-			 Background="#1f1f1f"
              x:Class="Anniverse.Views.MainPanelView">
 
 	<Grid>
@@ -17,11 +16,11 @@
 				<ColumnDefinition Width="80*"/>
 			</Grid.ColumnDefinitions>
 			
-			<Rectangle Grid.Column="0" Fill="#393E46" />
+			<Rectangle Grid.Column="0" Fill="#1f1f1f" />
 
 			<DockPanel Grid.Column="0">
-				<Button DockPanel.Dock="Top" FontSize="25" Height="60" Command="{Binding $parent[Window].DataContext.OpenAddNewEventView}" VerticalContentAlignment="Center" CornerRadius="0" Background="#393E46" Foreground="#DDDDDD" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Add new</Button>
-				<Border Background="#FF5722" Margin="20" VerticalAlignment="Bottom" CornerRadius="20">
+				<Button DockPanel.Dock="Top" FontSize="25" Height="60" Command="{Binding $parent[Window].DataContext.OpenAddNewEventView}" VerticalContentAlignment="Center" CornerRadius="0" Background="#1f1f1f" Foreground="#DDDDDD" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Add new</Button>
+				<Border Background="#CA3E47" Padding="3" VerticalAlignment="Bottom" CornerRadius="0">
 					<TextBlock FontSize="25" Foreground="#EEEEEE" Text="{Binding CurrentDate}" TextAlignment="Center"></TextBlock>
 				</Border>
 			</DockPanel>
@@ -32,25 +31,27 @@
 						<ItemsRepeater Items="{Binding Events}">
 							<ItemsRepeater.ItemTemplate>
 								<DataTemplate>
-									<DockPanel Margin="30,0,30,50">
-										<StackPanel>
-											<TextBlock Background="#2f2f2f" FontSize="25" Foreground="AntiqueWhite" TextAlignment="Center" Padding="0,8,0,8" Text="{Binding Name}"></TextBlock>
-											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding DateText}"></TextBlock>
-											<TextBlock TextAlignment="Center" Background="#2f2f2f" Foreground="AntiqueWhite" Height="40" FontSize="20" Padding="0,2,0,0" Text="{Binding EventType}"></TextBlock>
+									<Border CornerRadius="40">
+										<DockPanel Margin="30,0,30,50">
+											<StackPanel>
+												<TextBlock Background="#E1E8EB" FontSize="25" Foreground="Black" TextAlignment="Center" Padding="0,8,0,8" Text="{Binding Name}"></TextBlock>
+												<TextBlock TextAlignment="Center" Background="#E1E8EB" Foreground="Black" Height="40" FontSize="20" Padding="0,8,0,0" Text="{Binding DateText}"></TextBlock>
+												<TextBlock TextAlignment="Center" Background="#E1E8EB" Foreground="Black" Height="40" FontSize="20" Padding="0,2,0,0" Text="{Binding EventType}"></TextBlock>
 
-											<Grid>
-												<Grid.ColumnDefinitions>
-													<ColumnDefinition Width="100*" />
-												</Grid.ColumnDefinitions>
+												<Grid>
+													<Grid.ColumnDefinitions>
+														<ColumnDefinition Width="100*" />
+													</Grid.ColumnDefinitions>
 
-												<Button Command="{Binding $parent[ItemsRepeater].DataContext.DeleteEvent}" CommandParameter="{Binding Id}" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="#a4373a" CornerRadius="0" Background="#2f2f2f" FontSize="20">Delete</Button>
-											</Grid>
+													<Button Command="{Binding $parent[ItemsRepeater].DataContext.DeleteEvent}" CommandParameter="{Binding Id}" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="Red" CornerRadius="0" Margin="0" Background="#E1E8EB" FontSize="20">Delete</Button>
+												</Grid>
 											
-											<Border Background="{Binding ProgressBarColour}" Padding="0,1.5,0,1.5">
-												<TextBlock TextAlignment="Center" FontSize="18" Text="{Binding DaysLeftText}"></TextBlock>
-											</Border>
-										</StackPanel>
-									</DockPanel>
+												<Border Background="{Binding ProgressBarColour}" Padding="0,1.5,0,1.5">
+													<TextBlock TextAlignment="Center" FontSize="18" Text="{Binding DaysLeftText}"></TextBlock>
+												</Border>
+											</StackPanel>
+										</DockPanel>
+									</Border>
 								</DataTemplate>
 							</ItemsRepeater.ItemTemplate>
 						</ItemsRepeater>
